@@ -1,5 +1,5 @@
 {% set name = "xcube-zenodo" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-zenodo/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 2bf814bf785b9b35f732b5bd0ca684492739e9cb06577a3bd6b34b631781713c
+  sha256: 57aca999cdfb7623eb83bac398990e5976ac2a719d69e47c93fecce17d030457
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - rarfile
     - requests
     - xarray
-    - xcube >=1.12.0
+    - xcube >=1.13.1
     - zarr >=2.11,<3
 
 test:
